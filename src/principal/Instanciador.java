@@ -13,7 +13,7 @@ import autos.AutoDeCarreras;
  *
  * @author Angel
  */
-public class AgenciaDeViajes {
+public class Instanciador {
 
     /**
      * @param args the command line arguments
