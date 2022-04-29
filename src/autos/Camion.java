@@ -10,6 +10,14 @@ package autos;
  * @author Angel
  */
 public class Camion extends Terrestre {
+    public Camion(){
+        
+    }
+    
+    public Camion(int num_neumaticos){
+        setNumNeumaticos(num_neumaticos);
+    }
+    
     @Override
     public void setPasajeros(int pasajeros){
         if(pasajeros > cupoMaximo())
@@ -30,9 +38,11 @@ public class Camion extends Terrestre {
 
     @Override
     public void setNumNeumaticos(int num_neumaticos) {
-        int multiplo = 10;
-        if(num_neumaticos < 8)
-            this.num_neumaticos = 8;
+        int multiplo = 4;
+        if(num_neumaticos < multiplo * 2)
+            this.num_neumaticos = multiplo * 2;
+        else if(num_neumaticos > multiplo * 8)
+            this.num_neumaticos = multiplo * 8;
         else if(num_neumaticos % multiplo != 0)
             this.num_neumaticos = num_neumaticos + multiplo - (num_neumaticos % multiplo);
 /*

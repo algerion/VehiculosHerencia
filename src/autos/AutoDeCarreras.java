@@ -10,10 +10,17 @@ package autos;
  * @author Angel
  */
 public class AutoDeCarreras extends Automovil {
+    public AutoDeCarreras(){
+    }
+    
+    public AutoDeCarreras(int pasajeros, int num_neumaticos){
+        super(); //pasajeros, num_neumaticos);
+    }
+    
     @Override
     public void setPasajeros(int pasajeros){
-        if(pasajeros >= 1)
-            this.pasajeros = 1;
+        if(pasajeros >= 2)
+            this.pasajeros = 2;
         else
             this.pasajeros = 0;
     }

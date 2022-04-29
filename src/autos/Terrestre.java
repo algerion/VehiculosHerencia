@@ -12,6 +12,10 @@ package autos;
 public abstract class Terrestre extends Vehiculo {
     protected int num_neumaticos;
     
+    public Terrestre(){
+        setNumNeumaticos(0);
+    }
+    
     public abstract void setNumNeumaticos(int num_neumaticos);
     
     public abstract int getNumNeumaticos();
