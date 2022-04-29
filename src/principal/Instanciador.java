@@ -5,9 +5,11 @@
  */
 package principal;
 
-import autos.Camion;
-import autos.Automovil;
-import autos.AutoDeCarreras;
+import vehiculos.AutoDeCarreras;
+import vehiculos.Camion;
+import vehiculos.Barco;
+import vehiculos.Automovil;
+import vehiculos.Balsa;
 
 /**
  *
@@ -23,7 +25,10 @@ public class Instanciador {
         Automovil carrito = new Automovil();
         Camion camionsote = new Camion(), citibus = new Camion(), guajolojet = new Camion();
         AutoDeCarreras checoperez = new AutoDeCarreras();
-        
+        Barco pesquero1 = new Barco();
+        Balsa surcamares = new Balsa();
+        pesquero1.setTonelaje(0);
+        surcamares.setTonelaje(80);
         checoperez.setPasajeros(10);
         //llenaDePasajeros(carrito);
         //llenaDePasajeros(camionsote);
@@ -37,6 +42,8 @@ public class Instanciador {
         System.out.println(citibus);
         System.out.println(guajolojet);
         System.out.println(checoperez);
+        System.out.println(pesquero1);
+        System.out.println(surcamares);
     }
     
     public static void llenaDePasajeros(Automovil a){

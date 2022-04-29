@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package autos;
+package implementos;
 
 /**
  *
  * @author Angel
  */
-public class Acuatico extends Vehiculo {
-    
+public enum Combustible {
+    GASOLINA, DIESEL, GAS, ELECTRICIDAD, HIDROGENO;
 }
